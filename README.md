@@ -6,14 +6,14 @@
  - User SUBMITs search input field and is given extensive list of results
 ##Advanced Deliverables
  - Socrates is Submit button
-	- Default is Mario
-	- Not available is Megamind "No Images?"
+ - Default is Mario
+ - Not available is Megamind "No Images?"
 
- ##User Story: Eyes
-	- Blurred bg image conjuring knowledge/wisdom
-	- Title of app across the top
-	- Floating square for user interaction
-	- Top for “Search” submission
-	- Click event for dropdown of available authors
+ ##features
+ - Blurred bg image conjuring knowledge/wisdom
+ - Title of app across the top
+ - Floating square for user interaction
+ - Top for “Search” submission
+ - Click event for dropdown of available authors
  - Right side of screen has Author Image
 	
