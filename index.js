@@ -14,10 +14,12 @@ random.addEventListener("click", () => {
     .then((randomQuote) => {
       let quoteSpace = document.getElementById("quote-container");
       let nameSpace = document.getElementById("name-container");
+      let authorImage = document.getElementById("author-image");
       let quote = randomQuote.content 
       let quoteAuthor = randomQuote.author
       console.log(quoteAuthor)
       console.log(randomQuote);
+      authorImage.src= "./src/noImages.jpg"
       quoteSpace.innerText = `"${quote}"`;
       nameSpace.innerText = `~ ${quoteAuthor}`;
     });
@@ -43,7 +45,7 @@ form.addEventListener("input", (event) => {
             searchData.results.forEach(quote =>{
                 //console.log(quote)
                 
-                let quotes = document.createElement("p");
+                let quotes = document.createElement("ul");
     
                 quotes.innerText = `"${quote.content}" by ${quote.author}`
                 
