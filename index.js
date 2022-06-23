@@ -19,7 +19,7 @@ random.addEventListener("click", () => {
       let quoteAuthor = randomQuote.author
       console.log(quoteAuthor)
       console.log(randomQuote);
-      authorImage.src= "./src/noImages.jpg"
+      authorImage.src= "./src/NoImages-02.png"
       quoteSpace.innerText = `"${quote}"`;
       nameSpace.innerText = `~ ${quoteAuthor}`;
     });
@@ -33,10 +33,8 @@ form.addEventListener("input", (event) => {
   //console.log(searchResult)
   let target = document.querySelector("#searchResultArea");
   target.innerText=""
-  if (searchResult.innerText = undefined) {
+  if (searchResult === "") {
        console.log("undefined")
-    } else if (searchResult.innerText = "") {
-        console.log("empty")
     } else { 
         fetch(`http://api.quotable.io/search/quotes?query=${searchResult}&fields=author&limit=3`)
         .then((res) => res.json())
