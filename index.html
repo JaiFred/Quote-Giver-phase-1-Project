@@ -3,28 +3,47 @@
 <Title>Quote Library</Title>
 <script src="./index.js" defer ></script>
 <link rel="stylesheet" href="./style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Felipa&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Quote Library</h1>
-   
     <div id="Socrates" onmouseover="moveDABOY()">
         <img src="/src/Socrates Submit button.png">
     </div>
-    <h2>
-        <div id="random-button">
-            <button id="random-click">Random Quote</button>
+    <div id="black-box">
+        <div id="api-credits">
+            <h2>Powered by</h2>
+            <h3>Quotable API</h3>
         </div>
-        <div>
-            <p id="author"></p>  
-        </div>   
-        <p id="quote"></p>
+        <table>
+            <tr>
+                <td id="random-quote-cell">
+                    <div>
+                        <p id="quote-container"></p>
+                        <p id="name-container"></p>  
+                    </div>
+                </td>
+                <td>
+                    <div id="image-container">
+                        <img src="/src/Mario.png" alt="Mario">
+                        <div id="random-button">
+                            <button id="random-click">Random Quote</button>
+                        </div>
+                    </div>
+                </td>
+             </tr>
+         </table>
+        <!-- <p id="quote"></p> -->
         <form>
-        <input type="search" id="search-bar"/>
-        <input type="submit" value="Type Author to get Quote"/>
+            <input type="search" id="search-bar"/>
+            <input type="submit" value="Type Author to get Quote"/>
         </form>
+        
         <div id="searchResultArea"></div>
         <div></div>
-    </h2>
+    </div>
 </body>
 
        

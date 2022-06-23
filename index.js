@@ -12,12 +12,14 @@ random.addEventListener("click", () => {
   fetch("http://api.quotable.io/random")
     .then((res) => res.json())
     .then((randomQuote) => {
-      let quoteSpace = document.getElementById("author");
+      let quoteSpace = document.getElementById("quote-container");
+      let nameSpace = document.getElementById("name-container");
       let quote = randomQuote.content 
       let quoteAuthor = randomQuote.author
       console.log(quoteAuthor)
       console.log(randomQuote);
-      quoteSpace.innerText = `"${quote}" by ${quoteAuthor}`;
+      quoteSpace.innerText = `"${quote}"`;
+      nameSpace.innerText = `~ ${quoteAuthor}`;
     });
 });
 
