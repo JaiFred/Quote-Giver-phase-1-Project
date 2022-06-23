@@ -78,8 +78,18 @@ form.addEventListener("submit", (event) => {
 
 //New changes
 
+function moveDABOY(){
+let daBoy = document.getElementById("Socrates")
+daBoy.style.top = `${getRandomArbitrary(200,800)}px`
+daBoy.style.left = `${getRandomArbitrary(200,1000)}px`
+daBoy.style.opacity = "100%"
+daBoy.style.width= "75%"
+console.log(daBoy.style.top)
 
-
+}
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
 //is given extensive list of results
 //If photo is availible then display
 //else MEGAMIND "No Photo / Not Mario"
