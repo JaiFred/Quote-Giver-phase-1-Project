@@ -16,4 +16,3 @@
  - Top for “Search” submission
  - Click event for dropdown of available authors
  - Right side of screen has Author Image
-	
